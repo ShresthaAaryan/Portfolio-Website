@@ -3,8 +3,19 @@ document.addEventListener("DOMContentLoaded", function() {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
   const navLinks = document.querySelectorAll('.topnav a:not(.no-smooth-scroll)');
   const sidebarLinks = document.querySelectorAll('.sidebar a:not(.no-smooth-scroll)');
+  const myDiv = document.getElementById('project1');
+  const myDi = document.getElementById('project2');
+
 
   body.classList.add("light-mode");
+
+  myDiv.addEventListener('click', function() {
+    window.location.href = './Assets/Drum/index.html';
+  });
+
+  myDi.addEventListener('click', function() {
+    window.location.href = './Assets/Bmi/index.html';
+  });
 
   function toggleDarkMode() {
     body.classList.toggle("dark-mode");
